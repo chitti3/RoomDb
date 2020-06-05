@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddEditNote">
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:textSize="23sp"
+        android:hint="To do"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Anthill" />
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:hint="Enter a note...."
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:gravity="top|start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill"/>
+
+    <com.thebluealliance.spectrum.SpectrumPalette
+        android:id="@+id/palette"
+        app:spectrum_colors="@array/demo_colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></com.thebluealliance.spectrum.SpectrumPalette>
+
+
+</LinearLayout>
